@@ -2,9 +2,9 @@ var req = require('request');
 var fs = require('fs');
 var path = require('path');
 
-var URL = 'http://mtgjson.com/json/AllSets.json';
+var URL = 'http://mtgjson.com/json/AllSets-x.json';
 var ETAG_FILE = path.join(__dirname, 'data/etag');
-var DATA_FILE = path.join(__dirname, 'data/AllSets.json');
+var DATA_FILE = path.join(__dirname, 'data/AllSets-x.json');
 
 module.exports = function(callback) {
 	fs.readFile(ETAG_FILE, function(err, data) {
